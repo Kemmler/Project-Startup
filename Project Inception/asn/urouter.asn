@@ -1,0 +1,13 @@
+[SETTINGS] 
+$priv_mon_user = urouter
+$default_net = TCP:+13003||| 
+
+[SERVERS]
+; =========================================================================
+; Uniface servers
+; =========================================================================
+default = "C:\Program Files (x86)\Uniface\Uniface 9.7.01\common\bin\userver.exe" /adm="C:\Program Files (x86)\Uniface\Uniface 9.7.01\uniface\adm" /maxidle=3m /dir="E:\DeveloperConference" /asn=E:\DeveloperConference\wasv.asn
+; For Uniface WebApplication Server
+wasv = "C:\Program Files (x86)\Uniface\Uniface 9.7.01\common\bin\userver.exe" /dir="E:\DeveloperConference" /adm="C:\Program Files (x86)\Uniface\Uniface 9.7.01\uniface\adm" /asn=E:\DeveloperConference\wasv.asn
+; For debug purposes
+debug = "C:\Program Files (x86)\Uniface\Uniface 9.7.01\common\bin\userver.exe" /max=1 /dir="E:\DeveloperConference" /adm="C:\Program Files (x86)\Uniface\Uniface 9.7.01\uniface\adm" /deb=localhost+13004:wait /asn=wasv.asn
